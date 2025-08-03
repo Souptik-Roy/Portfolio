@@ -1,257 +1,81 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Souptik Roy</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <h1>Souptik Roy</h1>
-            <hr size="5" color="blue">
-            <!-- navigation bar -->
-            <nav>
-                <a href="#about">About Me</a><tab>
-                <a href="#skills">Skills</a><tab>
-                <a href="#projects">Projects</a><tab>
-                <a href="#achieve">Achievements & Awards</a><tab>
-                <a href="#contact">Contact</a><tab>
-            </nav>
-        </header>
-            <!-- about me -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hii, everyone . I'm <strong>  Souptik Roy</strong> ,a finar- year 
-                <strong>B.Tech CSE</strong>   student from <strong>DIATM,</strong> passionate about web development, real -world
-                 problem -solving , and building impactful tech like my award-wining Projects
-                 <strong>Plasticure</strong> and <strong>Raptor</strong>.
-            </p>
-            <p>
-                I enjoy  creating smart user- focused solution, participatin in hackathons, and conticuously learning to grow as a developer.
-            </p>
-            <!-- Education Details-->
-            <details>
-                <summary>
-               <strong >Education</strong> 
-                </summary>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Souptik Roy | Portfolio</title>
+  <link rel="stylesheet" href="style1.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="image.png" alt="My Avatar" class="avatar" />
+      <h2>Souptik Roy</h2>
+      <p class="tag">CSE Student</p>
+      <div class="info">
+        <p><strong>Email:</strong> souptik2005@gmail.com</p>
+        <p><strong>Phone:</strong> +91 6295721572</p>
+        <p><strong>Location:</strong> Durgapur, West Bengal</p>
+      </div>
+      <div class="socials">
+        <a href="linkedin.com/in/souptik-roy-95601926b/">LinkedIn</a>
+        <a href="https://github.com/Souptik-Roy">GitHub</a>
+        <a href="https://leetcode.com/u/souptik2005/">LeetCode</a>
+      </div>
+    </aside>
 
-                <table id="eduTable" border="6 ">
-                <tr>
-                    <th>Degree</th>
-                    <th>Institution</th>
-                    <th>Board/University</th>
-                    <th>Year</th>
-                    <th>Score:</th>
-                </tr>
-                <tr>
-                    <td>Bachelor in Technology</td>
-                    <td>Durgapur Institute Of Advanced Technology & Management</td>
-                    <td>Maulana Abul kalam Azad University & Technology</td>
-                    <td>2022-26</td>
-                    <td>8.27(6'th Sem)</td>
-                </tr>
+    <main class="main-content">
+      <nav class="nav">
+        <a href="#about" class="active">About</a>
+        <a href="#education">Education</a>
+        <!-- <a href="#skill">Skills</a> -->
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-                <tr>
-                    <td>Higher Secondary</td>
-                    <td>Sanko C.S. High School</td>
-                    <td>West Bengal Council of Higher Secondary Educatoin</td>
-                    <td>2022</td>
-                    <td>94.4%</td>
-                </tr>
+      <section id="about">
+        <h1>About Me</h1>
+        <p>Hi everyone! I'm <strong>Souptik Roy</strong>, a final-year <strong>B.Tech CSE</strong> student at <strong>DIATM</strong>, passionate about web development, real-world problem-solving, and building impactful tech like my award-winning projects <strong>Plasticure</strong> and <strong>Raptor</strong>.</p>
+      </section>
 
-                <tr>
-                    <td>Madhyamik</td>
-                    <td>Bonsujapur High School</td>
-                    <td>West Bengal Board of Secondary Education</td>
-                    <td>2020</td>
-                    <td>81.71%</td>
-                </tr>
-            </table>
-
-            </details>
-            <!-- Certificate :pending-->
-            <!-- Internship :pending-->
-            <!-- WorkShop :pending-->
-        </section>
-
-        <!-- My Skills -->
-         <section id ="skills">
-            <h2> My Skills</h2>
-            <ul>
-                <li>Programming language: Python, Java, C</li>
-                <li>Web -Dev: Html-Css-Javascript</li>
-                <li>Subjets: DSA, DBMS, CN, OOP's, Machine Learning, Complier Design, TOC, AI, NLP</li>
-                <li>DataBase: SQL (MySQl)</li>
-                <li>Tools:Git & GitHub</li>
-                <li>Ms-Office :Ms-Excel,Ms-Word, Ms- PowerPoint</li>
-                <li>DataSceince: Numpy, Pandas, Matplotlib</li>
-                <li>Other's : Linux</li>
-            </ul>
-         </section>
-
-         
-         <!-- Projects -->
-          <section id="projects">
-            <h2>My Projects</h2>
-                <details>
-                    <summary>DrishtiAI</summary>
-                    <p>Describe the surroundings for a blind people through audio,read the text(book,poster,letter).🚀
-</p>
-                </details>
-
-            <details>
-                <summary>PlastiCure</summary>
-                <p>
-                    AI-Powered Smart Dustbin: IoT-enabled system for smart plastic waste management with user rewards.(PlastiCure)
-                </p>
-                
-            </details>
-
-            <details>
-                <summary>Raptor</summary>
-                A smart helmet that detects accidents using a gyroscope and sends real-time GPS alerts 
-                to emergency contacts.
-            </details>
-
-                <details>
-                    <summary>AskMeAI</summary>
-                    <p>            A resume-trained chatbot that instantly answers queries about my professional journey, skills, and projects. --></p>
-                </details>
-
-
-                <details>
-                    <summary>SwasthaAI</summary>
-                    <p>Medical Bot(Physical+Mental)</p>
-                </details>
-
-                <details>
-                    <summary>[Eye control Mouse]</summary>
-                    <p>an assistive technology that helps people to create a computer mouse by eye movement controlling.</p>
-                </details>
-
-                <details>
-                    <summary> CNN model to classify images of plastic waste</summary>
-                    <p> A TensorFlow-Keras model for classifying images as organic or recyclable using CNN and image preprocessing.
-</p>
-                </details>
-                
-                <details>
-                    <summary>[Message Bomb]</summary>
-                    <p>A tool to send repeated messages quickly for testing or fun.
-</p>
-                </details>
-
-                <details>
-                    <summary>[EVM machine(Soft.)]</summary>
-                    <p>A software-based simulation of an electronic voting machine.
-</p>
-                </details>
-
-                <details>
-                    <summary>
-                        MaliMe
-                    </summary>
-                    <p>Mail personaly me using this website.</p>
-                </details>
-
-                <details>
-                    <summary>ChatGpt Clone</summary>
-                     A basic AI chatbot interface mimicking ChatGPT functionality.
-                </details>
-
-                <details>
-                    <summary>Mad Mouse Movement</summary>
-                    A program that triggers random, rapid mouse movements.
-                </details>
-                <!-- <details>
-                    <summary>Salary-Predictor</summary>
-                     Predicts salary based on experience using linear regression.
-                </details>
-                      </section> -->
-
-                      <!-- Achievements -->
-                       <sectoin id ="#achieve">
-                        <h2>Achievements & Awards</h2>
-                        <ol>
-                            <li>
-                                <details>
-                                    <summary>Presented & Got Excellent PlastiCure at Inter College Medi Tech Expo</summary>
-                                    <p>Awarded "Excellent/First" in the college's inter-tech fest, competing against 30+ groups.</p>
-                                </details>
-                            </li>
-
-                            <li>
-                                <details>
-                                    <summary>
-                                      Ranked 11th out of 246 teams at IHMMC-2025  
-                                    </summary>
-                                    <p>
-                                        Ranked 11th out of 246 teams at IHMMC-2025( an international-level hardware competition), for presenting our project "Raptor."·
-                                    </p>
-                                </details>
-                            </li>
-
-                            <li>
-                                <details>
-                                    <summary> Recognition for Reporting Book Error (CBS Publisher):</summary>
-                                    <p>Identified and reported an error in Biology for Engineers, earning acknowledgment from CBS Publishers.</p>
-                                </details>
-                            </li>
-
-                            <li>
-                                <details>
-                                <summary>National Means-cum-Merit Scholarship (NMCMSE)</summary>
-                                    <p>Qualified and received 48k scholarship at class 8.</p>
-                                    </details>
-
-                            </li>
-
-                            <li>
-                                <details>
-                                    <summary>District-Based Talent Search Examination</summary>
-                                    <p>Secured 8th rank and received a prize including money, a medal, a book, and a certificate.</p>
-                                </details>
-                            </li>
-
-                            <li>
-                                <details>
-                                    <summary>ATMECS-HACKATHON , HACKAZARD’ S 25</summary>
-                                    <p>participate and evalute for final round</p>
-                                </details>
-                            </li>
-                        </ol>
-                       </sectoin>
-
-            <!-- contacts -->
-             <section id="contact">
-                <h2> Contact Me</h2>
-                <details>
-                    <summary>Form For Contact</summary>
-                    <form>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" placeholder="Enter Your Name" required>
-                        <br>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" placeHolder="Enter Your Email" required>
-                        <br>
-                        <label for ="message" >Message:</label>
-                        <textarea id="message" placeholder="Enter Your Message:" required></textarea>
-                        <br>
-                        <button type="submitMessage">Send</button>
-                    </form>
-                </details>
-<details>
-    <summary>Social Media</summary>
-    <p>
-        <ul>
-            <li>LinkedIn :</li>
-            <li>GitHub:</li>
-            <li>LeetCode:</li>
+      <section id="education">
+        <h2>Education</h2>
+        <ul class="cards">
+          <li class="card">B.Tech in CSE(8.55- 6 Sem) — DIATM, Makaut University (2022–2026)</li>
+          <li class="card">12th Grade(94.4%) — Sanko C.S. High School (2022)</li>
+          <li class="card">10th Grade(81.7%) — Bonsujapur High School (2022)</li>
         </ul>
-    </p>
-</details>
-             </section>
+      </section>
 
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>DrishtiAI</h3>
+            <p>Audio description of surroundings and text reading for visually impaired users.</p>
+          </div>
+          <div class="card">
+            <h3>PlastiCure</h3>
+            <p>IoT-powered smart dustbin system for plastic waste management with user rewards.</p>
+        </div>
+            <div class="card">
+                <h3>Raptor</h3>
+                <p>AI-powered drone for real-time surveillance and monitoring.</p> 
+                </div>
+          <!-- <div class="card">
+            <h3>Other's</h3>
+            <p>Assistive tech for visually impaired using Groq, OCR, and voice.</p>
+          </div> -->
+        </div>
+      </section>
 
-             <Footer>2025 Souptik Roy</Footer>
-    </body>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Let’s collaborate! Reach out via email or LinkedIn.</p>
+      </section>
+    </main>
+  </div>
+</body>
 </html>
