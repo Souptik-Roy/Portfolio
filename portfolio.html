@@ -5,90 +5,113 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Souptik Roy | Portfolio</title>
   <link rel="stylesheet" href="style1.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <aside class="sidebar">
-      <img src="image.png" alt="My Avatar" class="avatar" />
-      <h2>Souptik Roy</h2>
-      <p class="tag">CSE Student</p>
-      <div class="info">
-        <p><strong>Email:</strong> souptik2005@gmail.com</p>
-        <p><strong>Phone:</strong> +91 6295721572</p>
-        <p><strong>Location:</strong> Durgapur, West Bengal</p>
+  <header>
+    <nav class="navbar">
+      <!-- update logo latter -->
+      <!-- <div class="logo"> <img src="image.png" alt="Logo"> </div> -->
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <!-- need to create about(education,blog) -->
+        <li><a href="#about">About</a></li>
+        <!-- certificate under skills -->
+        <li><a href="#skills">Skills</a></li>
+        <!-- achiecements under projects -->
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <img src="myImage.png" alt="Profile Photo" class="profile-pic" />
+      <h1>Hi, I'm <span class="highlight">Souptik Roy</span></h1>
+      <h3>Welcome to my Portfolio</h3>
+      <p>Frontend Developer | Java Developer | AI/ML Enthusiast</p>
+      <div class="buttons">
+        <a href="#" class="btn primary">Download Resume</a>
+        <a href="https://github.com/Souptik-Roy" class="btn">GitHub</a>
+        <a href="https://linkedin.com/in/souptik-roy-95601926b" class="btn">LinkedIn</a>
       </div>
-      <div class="socials">
-        <a href="linkedin.com/in/souptik-roy-95601926b/">LinkedIn</a>
-        <a href="https://github.com/Souptik-Roy">GitHub</a>
-        <a href="https://leetcode.com/u/souptik2005/">LeetCode</a>
+    </div>
+  </section>
+<section id="about" class="about-section">
+  <h2>About Me</h2>
+  <p>
+    I am a final-year Computer Science Engineering student with a passion for creating impactful tech solutions. 
+    From winning national-level competitions to developing AI-driven projects, I love combining creativity and logic.
+    My strengths lie in full-stack web development, problem-solving, and exploring machine learning innovations.
+  </p>
+  <p>
+    Beyond coding, I enjoy participating in hackathons, mentoring peers, and constantly learning new technologies to stay ahead.
+  </p>
+  <!-- <div class="education">
+      <h3>Education</h3>
+      <ul>
+        <li>B.Tech CSE – XYZ University – 2021-2025 – 8.2 CGPA</li>
+        <li>12th – ABC School – 2021 – 90%</li>
+      </ul>
+    </div> -->
+</section>
+  <!-- Additional Sections -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skill-list">
+      <li>Java</li>
+      <li>Python</li>
+      <li>Web Development</li>
+      <li>AI / ML</li>
+      <li>Problem Solving</li>
+    </ul>
+    <!-- <div class="certificates">
+      <h3>Certificates</h3>
+      <ul>
+        <li>Problem Solving (HackerRank)</li>
+        <li>Python for Everybody (Coursera)</li>
+        <li>Web Development Bootcamp (Udemy)</li>
+        <li>AI for Everyone (Coursera)</li>
+      </ul> -->
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>PlastiCure</h3>
+        <p>IoT-based smart bin to manage plastic waste and reward users.</p>
       </div>
-    </aside>
+      <div class="card">
+        <h3>DrishtiAI</h3>
+        <p>Text-to-speech aid for visually impaired using OCR and voice.</p>
+      </div>
+      <div class="card">
+        <h3>Raptor</h3>
+        <p>AI drone for real-time surveillance and monitoring.</p>
+      </div>
+    </div>
+    <!-- <div class="achievements">
+  <h3>Achievements</h3>
+  <ul>
+    <li>11th Rank in National Hardware Contest (Raptor Project)</li>
+    <li>Winner – TechFest 2024 (PlastiCure)</li>
+  </ul> -->
+  </section>
 
-    <main class="main-content">
-      <nav class="nav">
-        <a href="#about" class="active">About</a>
-        <a href="#education">Education</a>
-        <!-- <a href="#skill">Skills</a> -->
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-      <section id="about">
-        <h1>About Me</h1>
-        <p>Hi everyone! I'm <strong>Souptik Roy</strong>, a final-year <strong>B.Tech CSE</strong> student at <strong>DIATM</strong>, passionate about web development, AI/ML, real-world problem-solving, and building impactful tech like my award-winning projects <strong>Plasticure</strong> and <strong>Raptor</strong>.</p>
-      </section>
-
-      <section id="education">
-        <h2>Education</h2>
-        <ul class="cards">
-          <li class="card">B.Tech in CSE(8.55- 6 Sem) — DIATM, Makaut University (2022–2026)</li>
-          <li class="card">12th Grade(94.4%) — Sanko C.S. High School (2022)</li>
-          <li class="card">10th Grade(81.7%) — Bonsujapur High School (2022)</li>
-        </ul>
-      </section>
-
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="cards">
-          <div class="card">
-            <h3>DrishtiAI</h3>
-            <p>Audio description of surroundings and text reading for visually impaired users.</p>
-          </div>
-          <div class="card">
-            <h3>PlastiCure</h3>
-            <p>IoT-powered smart dustbin system for plastic waste management with user rewards.</p>
-        </div>
-            <div class="card">
-                <h3>Raptor</h3>
-                <p>AI-powered drone for real-time surveillance and monitoring.</p> 
-                </div>
-          <!-- <div class="card">
-            <h3>Other's</h3>
-            <p>Assistive tech for visually impaired using Groq, OCR, and voice.</p>
-          </div> -->
-        </div>
-      </section>
-
-      <section id="contact">
-        <h2>Contact</h2>
-     <form id="contact-form">
-  <label class="form-label" for="name">Name:</label>
-  <input class="form-input" type="text" id="name" name="name" placeholder="Enter Your Name">
-
-  <label class="form-label" for="email">Email:</label>
-  <input class="form-input" type="email" id="email" name="email" placeholder="Enter Your Email Id">
-
-  <label class="form-label" for="message">Message:</label>
-  <textarea class="form-input" id="message" name="message" placeholder="Enter Your Message"></textarea>
-
-  <button type="submit">Submit</button>
-</form>
-
-
-      </section>
-    </main>
-  </div>
+  <footer>
+    <p>© 2025 Souptik Roy. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
