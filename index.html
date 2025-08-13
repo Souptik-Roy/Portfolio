@@ -1,122 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Souptik Roy | Portfolio</title>
-  <link rel="stylesheet" href="style1.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souptik Roy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <!-- update logo latter -->
-      <div class="logo"><a href="#"> <img src="NameLogo.jpg" alt="Logo"> </a></div>
-      <ul class="nav-links">
-        <li><a href="#home" class="active">Home</a></li>
-        <!-- need to create about(education,blog) -->
-        <li><a href="#about">About</a></li>
-        <!-- certificate under skills -->
-        <li><a href="#skills">Skills</a></li>
-        <!-- achiecements under projects -->
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Animated background -->
+    <div class="bg-animation" id="bgAnimation"></div>
 
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <img src="myImage.png" alt="Profile Photo" class="profile-pic" />
-      <h1>Hi, I'm <span class="highlight">Souptik Roy</span></h1>
-      <h3>Welcome to my Portfolio</h3>
-      <p>Frontend Developer | Java Developer | AI/ML Enthusiast</p>
-      <div class="buttons">
-        <a href="ResumeForInternship.pdf" class="btn primary">Download Resume</a>
-        <a href="https://github.com/Souptik-Roy" class="btn">GitHub</a>
-        <a href="https://linkedin.com/in/souptik-roy-95601926b" class="btn">LinkedIn</a>
-      </div>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <!-- add my personal logo instead -->
+            <div class="logo" ><a href="#home">SR</a></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+  <div class="hero-content">
+    <img src="myImage.png" alt="Profile Photo" class="profile-pic" />
+    <h1>Hi, I'm <span class="highlight">Souptik Roy</span></h1>
+    <h3>Welcome to my Portfolio</h3>
+    <p>Frontend Developer | AI/ML Enthusiast | Java Developer </p>
+    <div class="buttons">
+      <a href="ResumeForInternship.pdf" class="btn primary">Download Resume</a>
+      <a href="https://github.com/Souptik-Roy" class="btn">GitHub</a>
+      <a href="https://linkedin.com/in/souptik-roy-95601926b" class="btn">LinkedIn</a>
     </div>
-  </section>
-<section id="about" class="about-section">
-  <h2>About Me</h2>
-  <p>
-    I am a final-year Computer Science Engineering student with a passion for creating impactful tech solutions. 
+  </div>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <div style="width: 100%; height: 300px; background: linear-gradient(45deg, var(--primary-color), var(--accent-color)); border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 4rem; color: white;">👨‍💻</div>
+            </div>
+            <div class="about-text">
+                <p> I am a final-year Computer Science Engineering student with a passion for creating impactful tech solutions. 
     From winning national-level competitions to developing AI-driven projects, I love combining creativity and logic.
     My strengths lie in full-stack web development, problem-solving, and exploring machine learning innovations.
   </p>
-  <!-- <p>
-    Beyond coding, I enjoy participating in hackathons, mentoring peers, and constantly learning new technologies to stay ahead.
-  </p> -->
-  <div class="education">
-  <h3>Education</h3>
-  <ul>
-    <li><strong>B.Tech in Computer Science</strong> – XYZ University (2022–2026) – 8.55 CGPA(Last Sem)</li>
-    <li><strong>Higher Secondary</strong> – Sanko C.S. High School (2021) – 94.4%</li>
-    <li><strong> Secondary</strong> – Bonsujapur High School (2021) – 81.7%</li>
-  </ul>
-</div>
+            </div>
+        </div>
+        
+        <div class="skills fade-in">
+            <div class="skill-card">
+                <div class="skill-icon">⚛</div>
+                <h3>Frontend</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🚀</div>
+                <h3>Programming Language</h3>
+                <p>Java, Python, C, SQL</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">☁</div>
+                <h3>Database</h3>
+                <p>MySQL</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3>Machine Learning</h3>
+                <p>Numpy, Pandas, Matplotlib, Scikit-Learn</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fa-solid fa-book"></i></div>
+                <h3>Core Subject</h3>
+                <p>DSA, DBMS, OS, CN</p>
+            </div>
+        </div>
+    </section>
 
- </section>
-  <!-- Additional Sections -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul class="skill-list">
-      <li>Programming Language : Java, Python, C, SQL.</li>
-      <li>Fronend Development : Html, Css, JavaScript.</li>
-      <li>Core subject : DSA, DBMS, OS, CN.</li>
-      <li>Database: MySQL</li>
-      <li>AI / ML</li>
-      <li>Problem Solving</li>
-    </ul>
-    <!-- <div class="certificates">
-      <h3>Certificates</h3>
-      <ul>
-        <li>Problem Solving (HackerRank)</li>
-        <li>Python for Everybody (Coursera)</li>
-        <li>Web Development Bootcamp (Udemy)</li>
-        <li>AI for Everyone (Coursera)</li>
-      </ul> -->
-  </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>PlastiCure</h3>
-        <p>IoT-based smart bin to manage plastic waste and reward users.</p>
-      </div>
-      <div class="card">
-        <h3>DrishtiAI</h3>
-        <p>Describe the surroundings for a blind people through audio,read the text(book,poster,letter)</p>
-      </div>
-      <div class="card">
-        <h3>Raptor</h3>
-        <p>A smart helmet that detects accidents using a gyroscope and sends real-time GPS alerts to emergency
-contacts.</p>
-      </div>
+
+<!-- Projects Section --><section id="projects" class="fade-in">
+    <h2 class="section-title">Projects</h2>
+
+    <!-- Filter Buttons -->
+    <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="iot">IoT</button>
+        <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="java">Java</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="c">C</button>
     </div>
-    <!-- <div class="achievements">
-  <h3>Achievements</h3>
-  <ul>
-    <li>11th Rank in National Hardware Contest (Raptor Project)</li>
-    <li>Winner – TechFest 2024 (PlastiCure)</li>
-  </ul> -->
-  </section>
 
-  
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <!-- Projects Grid -->
+    <div class="projects-grid">
 
-  <footer>
-    <p>© 2025 Souptik Roy. All Rights Reserved.</p>
-  </footer>
+        <!-- IoT  -->
+        <a href="https://plastecure.netlify.app/" class="project-link" data-category="iot ">
+            <div class="project-card">
+                <div class="project-image"><i class="fa-solid fa-bottle-water"></i></div>
+                <div class="project-content">
+                    <h3 class="project-title">PlastiCure</h3>
+                    <p>IoT-based smart bin to manage plastic waste and reward users.</p>
+                    <div class="project-tech">
+                        <!-- <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Chart.js</span> -->
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <!-- IoT -->
+        <a href="https://raptorai.netlify.app/" class="project-link" data-category="iot ">
+            <div class="project-card">
+                <div class="project-image"><i class="fa-solid fa-helmet-un"></i></div>
+                <div class="project-content">
+                    <h3 class="project-title">Raptor</h3>
+                    <p>Smart helmet detecting accidents & sending real-time GPS alerts.</p>
+                    <div class="project-tech">
+                        <!-- <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Stripe</span> -->
+                    </div>
+                </div>
+            </div>
+        </a>
+                <!-- Frontend -->
+        <a href="https://amazon-clone-souptik-roy.netlify.app/" class="project-link" data-category="frontend">
+            <div class="project-card">
+                <div class="project-image"><i class="fa-brands fa-amazon"></i></div>
+                <div class="project-content">
+                    <h3 class="project-title">Amazon Clone</h3>
+                    <p>Amazon UI replica with HTML & CSS.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <!-- Machine Learning -->
+        <a href="#" class="project-link" data-category="machine-learning">
+            <div class="project-card">
+                <div class="project-image"><i class="fa-solid fa-robot"></i></div>
+                <div class="project-content">
+                    <h3 class="project-title">Sample Machine Learning</h3>
+                    <p>Description for sample model</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Pandas</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <!-- Java -->
+        <a href="#" class="project-link" data-category="java">
+            <div class="project-card">
+                <div class="project-image"><i class="fa-brands fa-java"></i></div>
+                <div class="project-content">
+                    <h3 class="project-title">Java Chat App(Sample)</h3>
+                    <p>Real-time client-server chat application with GUI.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Swing</span>
+                        <span class="tech-tag">Sockets</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <!-- Python -->
+        <a href="#" class="project-link" data-category="python">
+            <div class="project-card">
+                <div class="project-image"><i class="fa-brands fa-python"></i></div>
+                <div class="project-content">
+                    <h3 class="project-title">Weather App(sample)</h3>
+                    <p>Python app fetching real-time weather updates via API.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Tkinter</span>
+                        <span class="tech-tag">OpenWeather API</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <!-- C -->
+        <a href="#" class="project-link" data-category="c">
+            <div class="project-card">
+                <div class="project-image"><i class="fa-solid fa-code"></i></div>
+                <div class="project-content">
+                    <h3 class="project-title">Bank Management System(sample)</h3>
+                    <p>C program to manage accounts, transactions, and records.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C</span>
+                        <span class="tech-tag">File Handling</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+        <h2 class="section-title">Let's Connect</h2>
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div style="text-align: center;">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+        </form>
+    </section>
+<footer>
+    <div class="first-footer">
+        <div>©2025  Souptik Roy Portfolio.</div>
+    </div>
+</footer>
+    <script src="script.js"></script>
+    <script src="project_button.js"></script>
 </body>
 </html>
