@@ -77,7 +77,17 @@
             z-index: 1000;
             transition: all 0.3s ease;
         }
-
+#dark-mode-toggle {
+            background: none;
+            border: none;
+            color: var(--text-light);
+            font-size: 1.5rem;
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            transition: color 0.3s ease;
+        }
         .nav-container {
             max-width: 1200px;
             margin: 0 auto;
@@ -652,4 +662,61 @@
 #chatButton:hover {
     transform: scale(1.1);
     background: var(--secondary-color, #4f46e5);
+}
+
+
+/* for light mode */
+/* Light Mode Overrides */
+body.light-mode {
+    background: linear-gradient(135deg, var(--bg-light) 0%, #f1f5f9 50%, #e2e8f0 100%);
+    color: var(--text-dark);
+}
+
+body.light-mode nav {
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .nav-links a {
+    color: var(--text-dark);
+}
+
+body.light-mode .nav-links a:hover {
+    color: var(--primary-color);
+}
+
+body.light-mode #dark-mode-toggle {
+    color: var(--text-dark);
+}
+/* Light Mode Overrides */
+body.light-mode {
+    background: linear-gradient(135deg, var(--bg-light) 0%, #f1f5f9 50%, #e2e8f0 100%);
+    color: var(--text-dark);
+}
+
+/* Navbar in Light Mode (soft blue) */
+body.light-mode nav {
+    background: #4f46e5; /* light sky blue */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .nav-links a {
+    color: var(--text-dark);
+}
+
+body.light-mode .nav-links a:hover {
+    color: var(--primary-color);
+}
+
+body.light-mode #dark-mode-toggle {
+    color: var(--text-dark);
+}
+
+/* Footer in Light Mode (soft blue tone) */
+body.light-mode .first-footer {
+    background-color: #4f46e5; /* light blue footer */
+    color: var(--text-dark);
+}
+nav.light-mode .nav-container {
+    background: #4f46e5; /* light sky blue */
 }

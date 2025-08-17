@@ -166,3 +166,16 @@
         });
     });
 });
+
+
+// toggle button
+  const toggleButton = document.getElementById("dark-mode-toggle");
+  const body = document.body;
+
+  // Default = Dark Mode
+  toggleButton.textContent = "☀️";
+
+  toggleButton.addEventListener("click", () => {
+    body.classList.toggle("light-mode");
+    toggleButton.textContent = body.classList.contains("light-mode") ? "🌙" : "☀️";
+  });
