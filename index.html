@@ -9,6 +9,9 @@
 
 </head>
 <body>
+    <!-- <script>
+        alert('Give voice command to navigate the portfolio.')
+    </script> -->
     <!-- Animated background -->
     <div class="bg-animation" id="bgAnimation"></div>
 
@@ -21,8 +24,8 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button id="dark-mode-toggle">☀️</button>
@@ -41,7 +44,7 @@
   <span id="result"></span>
 
     <div class="buttons">
-      <a href="ResumeForInternship.pdf" class="btn primary">Download Resume</a>
+      <a href="Resume_Soft.pdf" class="btn primary">Download Resume</a>
       <a href="https://github.com/Souptik-Roy" class="btn">GitHub</a>
       <a href="https://linkedin.com/in/souptik-roy-95601926b" class="btn">LinkedIn</a>
     </div>
@@ -57,7 +60,7 @@
                 <div style="width: 100%; height: 300px; background: linear-gradient(45deg, var(--primary-color), var(--accent-color)); border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 4rem; color: white;">👨‍💻</div>
             </div>
             <div class="about-text">
-                <p> I am a final-year Computer Science Engineering student with a passion for creating impactful tech solutions. 
+                <p> I am a B.Tech final-year CSE student with a passion for creating impactful tech solutions. 
     From winning national-level competitions to developing AI-driven projects, I love combining creativity and logic.
     My strengths lie in full-stack web development, problem-solving, and exploring machine learning innovations.
   </p>
@@ -117,45 +120,6 @@
   </div>
 </section>
 
-<section id="achievements" class="achievements">
-  <h2 class="section-title">Achievements</h2>
-
-  <div class="education-grid">
-        <div class="edu-card fade-in">
-
-    <h3>National Means-cum-Merit Scholarship</h3>
-    <p>Awarded under NMCMSE for outstanding academic performance.</p>
-    <span class="year">2021</span>
-  </div>
-  </div>
-  <div class="education-grid">
-    <div class="edu-card fade-in">
-    <h3>8th Rank – District Talent Search Examination</h3>
-    <p>Secured top 10 rank and awarded with prize, certificate, and recognition.</p>
-    <span class="year">2020</span>
-  </div>
-  </div>
-  </div>
-  <div class="education-grid">
-
-        <div class="edu-card fade-in">
-    <h3>‘Excellent’ Award – Plasticure Project</h3>
-    <p>Recognized at intra-college tech fest for innovative IoT-based waste management project.</p>
-    <span class="year">2023</span>
-  </div>
-  </div>
-  <div class="education-grid">
-
-
-            <div class="edu-card fade-in">
-
-    <h3>Shortlisted in Hackathons</h3>
-    <p>Participated and shortlisted in multiple hackathons with innovative AI & ML projects.</p>
-    <span class="year">2023-2024</span>
-  </div>
-  </div>
-
-</section>
 
 
 <!-- Projects Section --><section id="projects" class="fade-in">
@@ -175,6 +139,23 @@
     <!-- Projects Grid -->
     <div class="projects-grid">
         <!-- Data Science -->
+          <a href="https://spam-classifier-souptik.netlify.app/" class="project-link" data-category="ds ml">
+            <div class="project-card">
+                <div class="project-image">📧 </div>
+                <div class="project-content">
+                    <h3 class="project-title">Intelligent Spam Detector</h3>
+                    <p>A machine learning model that classifies messages as spam or not spam</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Flask(Python)</span>
+                        <span class="tech-tag">Scikit-learn </span>
+                        <span class="tech-tag">Pandas</span>
+                    </div>
+                </div>
+            </div>
+        </a>
           <a href="https://real-estate-price-prediction1.netlify.app/" class="project-link" data-category="ds ml">
             <div class="project-card">
                 <div class="project-image"><i class="fa-solid fa-house-chimney"></i></div>
@@ -188,6 +169,23 @@
                         <span class="tech-tag">Flask(Python)</span>
                         <span class="tech-tag">Scikit-learn </span>
                         <span class="tech-tag">Pandas</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <!-- web development -->
+         <a href="https://mab-celebrations.netlify.app/" class="project-link" data-category="frontend">
+            <div class="project-card">
+                <div class="project-image"><i class="fa-solid fa-house-chimney"></i></div>
+                <div class="project-content">
+                    <h3 class="project-title">Catering Service Platform</h3>
+                    <p>A modern and responsive Catering Service Platform that helps users explore cuisines, compare caterers, view pricing, and book catering services for weddings, parties, corporate events, and festivals.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+
                     </div>
                 </div>
             </div>
@@ -324,10 +322,51 @@
 
 
 
+<section id="achievements" class="achievements">
+  <h2 class="section-title">Achievements</h2>
+
+  <div class="education-grid">
+        <div class="edu-card fade-in">
+
+    <h3>National Means-cum-Merit Scholarship</h3>
+    <p>Awarded under NMCMSE for outstanding academic performance.</p>
+    <span class="year">2021</span>
+  </div>
+  </div>
+  <div class="education-grid">
+    <div class="edu-card fade-in">
+    <h3>8th Rank – District Talent Search Examination</h3>
+    <p>Secured top 10 rank and awarded with prize, certificate, and recognition.</p>
+    <span class="year">2020</span>
+  </div>
+  </div>
+  </div>
+  <div class="education-grid">
+
+        <div class="edu-card fade-in">
+    <h3>‘Excellent’ Award – Plasticure Project</h3>
+    <p>Recognized at intra-college tech fest for innovative IoT-based waste management project.</p>
+    <span class="year">2023</span>
+  </div>
+  </div>
+  <div class="education-grid">
+
+
+            <div class="edu-card fade-in">
+
+    <h3>Shortlisted in Hackathons</h3>
+    <p>Participated and shortlisted in multiple hackathons with innovative AI & ML projects.</p>
+    <span class="year">2023-2024</span>
+  </div>
+  </div>
+
+</section>
+
+
     <!-- Contact Section -->
     <section id="contact" class="fade-in">
         <h2 class="section-title">Let's Connect</h2>
-        <form class="contact-form" id="contactForm">
+        <form class="contact-form" id="contactForm" netlify>
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>

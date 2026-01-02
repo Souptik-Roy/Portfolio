@@ -3,13 +3,14 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+/* 
+        change the color style */
         :root {
-            --primary-color: #6366f1;
-            --secondary-color: #8b5cf6;
+            --primary-color: #7f70ca;
+            --secondary-color: #5a4982;
             --accent-color: #06d6a0;
             --text-light: #f8fafc;
-            --text-dark: #1e293b;
+            --text-dark: #080c13;
             --bg-dark: #0f172a;
             --bg-light: #ffffff;
             --glass-bg: rgba(255, 255, 255, 0.1);
@@ -719,4 +720,103 @@ body.light-mode .first-footer {
 }
 nav.light-mode .nav-container {
     background: #4f46e5; /* light sky blue */
+}
+
+
+/* Education Section */
+#education {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.edu-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+}
+
+.edu-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: var(--accent-color);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.edu-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.edu-card p {
+  margin-bottom: 0.3rem;
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+.edu-card span {
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+/* Achievements Section */
+#achievements {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.achievement-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+}
+
+.achievement-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: var(--accent-color);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.achievement-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.achievement-card p {
+  margin-bottom: 0.3rem;
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+.achievement-card span {
+  font-size: 0.9rem;
+  color: #94a3b8;
 }
